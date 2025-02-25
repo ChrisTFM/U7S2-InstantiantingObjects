@@ -33,10 +33,26 @@ public class Player {
         player_2.years = 15;
         response += "Years in the League: " + player_2.years + " years";
 
-
-
-
         return response;
+    }
+
+    public static Player getPlayers(String var) {
+        Player player_1 = new Player();
+
+        player_1.varaible = "Stephen Curry";
+        player_1.name = "Stephen Curry";
+        player_1.height = "6'2";
+        player_1.years = 13;
+
+        Player player_2 = new Player();
+        player_2.varaible = "Michael Jordan ";
+        player_2.name = "Michael Jordan";
+        player_2.height = "6'6";
+        player_2.years = 15;
+
+        if (var == player_1.varaible) {return player_1;}
+        if (var == player_2.varaible) {return player_2;}
+        return null;
     }
 
     public static void main(String[] args) {
