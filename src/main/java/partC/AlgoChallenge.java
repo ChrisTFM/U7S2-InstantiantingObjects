@@ -15,8 +15,18 @@ public class AlgoChallenge {
      */
 
     public static Boolean range3050(int one, int two) {
+        if (one <= 40 && one >= 30 ) {
+            if (two <= 40 && two >= 30) {
+                return true;
+            }
+        }
+        if (one <= 50 && one >= 40 ) {
+            if (two <= 50 && two >= 40 ) {
+                return true;
+            }
+        }
 
-        return null;
+        return false;
     }
 
      /* Problem 21
@@ -31,8 +41,13 @@ public class AlgoChallenge {
      */
 
     public static Boolean compareLastDigit(int value1, int value2) {
+        String strValue1 = String.valueOf(value1);
+        String strValue2 = String.valueOf(value2);
 
-        return null;
+        char mod1 = strValue1.charAt(strValue1.length() - 1);
+        char mod2 = strValue2.charAt(strValue2.length() - 1);
+
+        return mod1 == mod2;
     }
 
 
